@@ -51,20 +51,106 @@
 }
 
 .main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   background-color: white;
   height: 100px;
   padding-top: 46px;
   padding: 0 40px;
 }
 
+.room-name {
+  font-size: 24px;
+  color: #333;
+  margin-top: 36px;
+  height: fit-content;
+}
+
+.close-btn {
+  padding: 20px;
+  border: 1px solid darkred;
+  margin-top: 20px;
+}
+
+.close-btn a {
+  color: darkred;
+  text-decoration: none;
+}
+
 .main-middle {
   background-color: #FAFAFA;
   height: calc(100% - 190px);
-  padding: 46px 40px 0
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+.message-header {
+  display: flex;
+}
+
+.posted-by {
+  font-size: 16px;
+  color: #434A54;
+  margin: 10px 0;
+}
+
+.posted-date {
+  font-size: 12px;
+  color: #999;
+  margin: 10px;
+}
+
+.message-body {
+  font-size: 14px;
+  color: #434A54;
+  margin-bottom: 50px;
 }
 
 .main-bottom {
   background-color: #DDDDDD;
   height: 90px;
   padding: 20px 40px;
+}
+
+.message-form {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  margin-right: 15px;
+  background-color: white;
+}
+
+.input-text {
+  width: 100%;
+  padding-left: 10px;
+  border: none;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.submit-btn {
+  font-size: 16px;
+  color: white;
+  background-color: #38AEF0;
+  text-align: center;
+  padding: 0 20px;
+  border: none;
+}
+
+.hidden {
+  display: none;
 }
