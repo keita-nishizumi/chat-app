@@ -36,8 +36,8 @@ Things you may want to cover:
 ### Association
 
 - has_many :room_users
-- has_many :rooms, through: room_users
-- has_mane :messages
+- has_many :rooms, through: :room_users
+- has_many :messages
 
 ## rooms table
 
@@ -48,14 +48,15 @@ Things you may want to cover:
 ### Association
 
 - has_many :room_users
-- has_many :users, through: room_users
-- has_mant :messages
+- has_many :users, through: :room_users
+- has_many :messages
 
 ## room_users table
 
 | Column   | Type      | Options                        |
 | -------- | --------- | ------------------------------ |
 | user     | reference | null: false, foreign_key: true |
+| room     | reference | null: false, foreign_key: true |
 
 ### Association
 
